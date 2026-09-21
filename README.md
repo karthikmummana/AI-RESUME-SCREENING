@@ -6,56 +6,101 @@
 [![Database](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](https://www.mongodb.com/)
 [![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%7C%20Render-black)](https://vercel.com/)
 
-An AI-powered web application that automates the initial resume screening process by analyzing candidate resumes against job requirements, extracting relevant information and skills, calculating resume suitability/ATS scores, identifying matching and missing skills, and ranking candidates.
-
-The system is designed to help recruiters reduce the time spent on manual resume screening and provide a structured way to evaluate multiple candidates against a particular job requirement.
+> An AI-powered web application for automated resume screening, resume parsing, skill extraction, job matching, ATS/suitability scoring, candidate ranking, and candidate management.
 
 ---
 
 ## 🌐 Live Demo
 
-### Frontend
+### 🚀 Main Application
 
-🔗 **Live Application:**  
+**Live Project:**  
 https://ai-resume-screening-xi.vercel.app/
 
-### Backend
+### ⚙️ Backend API
 
-🔗 **Backend API:**  
+**Backend:**  
 https://ai-resume-screening-f60a.onrender.com
 
-### GitHub Repository
+### 📂 GitHub Repository
 
-🔗 **Source Code:**  
+**Source Code:**  
 https://github.com/karthikmummana/AI-RESUME-SCREENING
+
+> The Vercel URL is the main Live Demo for the complete application. The React frontend communicates with the deployed Node.js/Express backend on Render.
 
 ---
 
 # 📌 Project Overview
 
-Recruiters may receive a large number of resumes for a single job opening. Manually reviewing every resume can be time-consuming and makes it difficult to compare candidates consistently.
+The **AI Resume Screening System** is a full-stack web application designed to automate the initial stage of the recruitment and resume screening process.
 
-The **AI Resume Screening System** automates the initial screening stage by processing candidate resumes and comparing them with defined job requirements.
+Recruiters may receive a large number of resumes for a single job position. Manually reviewing every resume can be time-consuming and makes it difficult to consistently compare candidates.
 
-The application follows this workflow:
+This system allows recruiters to create a screening session, provide job requirements, upload candidate resumes, process and parse resume information, extract skills, compare candidate resumes with job requirements, calculate an ATS/suitability score, identify matching and missing skills, rank candidates, and manage candidate screening status.
+
+The application provides a structured workflow from **resume upload to candidate evaluation**.
+
+---
+
+# 🎯 Project Objectives
+
+The main objectives of this project are:
+
+- Automate the initial resume screening process
+- Reduce manual resume review effort
+- Extract useful information from candidate resumes
+- Identify candidate technical and professional skills
+- Compare resumes with job requirements
+- Identify matching skills
+- Identify missing skills
+- Calculate resume suitability/ATS scores
+- Rank candidates based on screening results
+- Provide structured candidate information
+- Allow recruiters to review candidates
+- Manage candidate screening status
+- Provide access to uploaded candidate resumes
+
+---
+
+# 🔄 Complete Project Workflow
 
 ```text
-Job Requirements
-       ↓
-Resume Upload
-       ↓
-Resume Parsing
-       ↓
-Information Extraction
-       ↓
-Skill Extraction
-       ↓
-Resume–Job Matching
-       ↓
-ATS / Suitability Score
-       ↓
-Candidate Ranking
-       ↓
-Candidate Review
-       ↓
-Shortlist / Review / Reject
+                    Recruiter
+                       │
+                       ▼
+              Create Screening
+                       │
+                       ▼
+             Enter Job Requirements
+                       │
+                       ▼
+                Upload Resumes
+                       │
+                       ▼
+                Resume Parsing
+                       │
+                       ▼
+              Information Extraction
+                       │
+                       ▼
+                Skill Extraction
+                       │
+                       ▼
+             Resume-Job Matching
+                       │
+                       ▼
+             Matching/Missing Skills
+                       │
+                       ▼
+              ATS/Suitability Score
+                       │
+                       ▼
+               Candidate Ranking
+                       │
+                       ▼
+              Candidate Review
+                       │
+              ┌────────┼────────┐
+              ▼        ▼        ▼
+           Review   Shortlist  Reject
