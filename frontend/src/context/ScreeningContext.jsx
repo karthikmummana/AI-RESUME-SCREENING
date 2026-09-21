@@ -3,6 +3,8 @@ import axios from 'axios';
 
 const ScreeningContext = createContext();
 
+const API_URL = import.meta.env.VITE_API_URL || '';
+
 export const ScreeningProvider = ({ children }) => {
   const [sessionId, setSessionIdState] = useState(() => {
     return localStorage.getItem('ai_screening_session_id') || null;
@@ -64,7 +66,7 @@ export const ScreeningProvider = ({ children }) => {
   const createSessionOnServer = useCallback(async () => {
     try {
       setError(null);
-      const res = await axios.post('/api/screening/create', {
+      const res = await axios.post(`${API_URL}/api/screening/create`, {
         companyName,
         jobTitle,
         jobDescription,
@@ -101,7 +103,7 @@ export const ScreeningProvider = ({ children }) => {
         formData.append('resumes', file);
       });
 
-      const res = await axios.post(`/api/screening/${activeSessionId}/resumes`, formData, {
+      const res = await axios.post(`${API_URL}/api/screening/${activeSessionId}/resumes`, formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       });
 
@@ -126,7 +128,7 @@ export const ScreeningProvider = ({ children }) => {
     try {
       setError(null);
       setIsProcessing(true);
-      const res = await axios.post(`/api/screening/${activeSessionId}/analyze`);
+      const res = await axios.post(`${API_URL}/api/screening/${activeSessionId}/analyze`);
       setIsProcessing(false);
       return res.data;
     } catch (err) {
@@ -144,7 +146,7 @@ export const ScreeningProvider = ({ children }) => {
 
     try {
       setError(null);
-      const res = await axios.get(`/api/screening/${activeSessionId}/results`);
+      const res = await axios.get(`${API_URL}/api/screening/${activeSessionId}/results`);
       if (res.data.success) {
         setResultsData(res.data);
         return res.data;
@@ -158,7 +160,7 @@ export const ScreeningProvider = ({ children }) => {
   // API Call: Update Candidate Status
   const updateCandidateStatus = useCallback(async (candidateId, newStatus) => {
     try {
-      const res = await axios.put(`/api/candidates/${candidateId}/status`, { status: newStatus });
+      const res = await axios.put(`${API_URL}/api/candidates/${candidateId}/status`, { status: newStatus });
       if (res.data.success) {
         setResultsData(prev => {
           if (!prev) return prev;

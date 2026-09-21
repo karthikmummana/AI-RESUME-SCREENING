@@ -9,8 +9,17 @@ const mammoth = require('mammoth');
 async function extractTextFromPdf(filePath) {
   try {
     const dataBuffer = fs.readFileSync(filePath);
-    const pdfData = await pdfParse(dataBuffer);
-    return (pdfData.text || '').trim();
+    let parseFunc = typeof pdfParse === 'function' ? pdfParse : (pdfParse.default || null);
+    if (typeof parseFunc === 'function') {
+      const pdfData = await parseFunc(dataBuffer);
+      return (pdfData && pdfData.text ? pdfData.text : '').trim();
+    } else if (pdfParse && pdfParse.PDFParse) {
+      const instance = new pdfParse.PDFParse({ data: dataBuffer });
+      if (typeof instance.load === 'function') await instance.load();
+      const textData = await instance.getText();
+      return (textData && textData.text ? textData.text : '').trim();
+    }
+    return '';
   } catch (err) {
     console.error(`[jsResumeParser] Error reading PDF file ${filePath}:`, err.message);
     return '';

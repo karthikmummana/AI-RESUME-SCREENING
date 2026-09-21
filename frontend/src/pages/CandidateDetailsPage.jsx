@@ -9,6 +9,8 @@ import { Radar, RadarChart, PolarGrid, PolarAngleAxis, ResponsiveContainer } fro
 import { useScreening } from '../context/ScreeningContext';
 import StepProgressBar from '../components/StepProgressBar';
 
+const API_URL = import.meta.env.VITE_API_URL || '';
+
 export default function CandidateDetailsPage() {
   const { candidateId } = useParams();
   const navigate = useNavigate();
@@ -23,7 +25,7 @@ export default function CandidateDetailsPage() {
     const fetchCandidateData = async () => {
       try {
         setLoading(true);
-        const res = await axios.get(`/api/candidates/${candidateId}`);
+        const res = await axios.get(`${API_URL}/api/candidates/${candidateId}`);
         if (res.data.success) {
           setData(res.data);
         }
@@ -459,7 +461,7 @@ export default function CandidateDetailsPage() {
 
             <div className="p-4 border-t border-slate-800 flex items-center justify-end space-x-3">
               <a
-                href={`/api/candidates/${candidate._id}/resume`}
+                href={`${API_URL}/api/candidates/${candidate._id}/resume`}
                 target="_blank"
                 rel="noreferrer"
                 className="px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold text-xs flex items-center space-x-1.5"
