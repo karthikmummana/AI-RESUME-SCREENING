@@ -1,0 +1,61 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 4 0 R >> >> /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1380 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 750 Td
+(Rahul Kumar) T*
+(AI & Machine Learning Engineer | Email: rahul.kumar@email.com | Phone: +91 9876543210) T*
+() T*
+(PROFESSIONAL SUMMARY:) T*
+(Innovative AI Engineer with 3+ years of experience developing machine learning models, natural language processing pipelines, and SQL data workflows using Python, PyTorch, Scikit-learn, and Pandas.) T*
+() T*
+(TECHNICAL SKILLS:) T*
+(Python, Machine Learning, Deep Learning, SQL, Pandas, NumPy, Scikit-learn, PyTorch, NLP, TF-IDF, Cosine Similarity, FastAPI, Docker, Git) T*
+() T*
+(WORK EXPERIENCE:) T*
+(Senior AI Engineer - DataTech Solutions \\(2022 - Present\\)) T*
+(- Built end-to-end NLP text classification pipelines processing 50k+ documents daily using TF-IDF and Transformers.) T*
+(- Developed predictive ML algorithms with Scikit-learn and Pandas achieving 94% accuracy.) T*
+(- Designed complex SQL queries and data processing workflows.) T*
+() T*
+(EDUCATION:) T*
+(B.Tech in Computer Science & Engineering - IIT Delhi \\(2018 - 2022\\)) T*
+() T*
+(KEY PROJECTS:) T*
+(AI Resume Matcher System: Built a semantic resume matching application using Python, NLP, TF-IDF, and FastAPI.) T*
+(Customer Churn Predictor: Created XGBoost model trained on Pandas & NumPy data pipelines.) T*
+() T*
+(CERTIFICATIONS:) T*
+(AWS Certified Machine Learning Specialist | DeepLearning.AI TensorFlow Professional) T*
+() T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1750
+%%EOF

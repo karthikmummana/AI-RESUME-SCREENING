@@ -1,0 +1,61 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 4 0 R >> >> /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1255 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 750 Td
+(Ananya Deshmukh) T*
+(NLP Research Engineer | Email: ananya.d@email.com | Phone: +91 9898989898) T*
+() T*
+(PROFESSIONAL SUMMARY:) T*
+(NLP Specialist experienced in text mining, Transformers, HuggingFace, SpaCy, Python, Machine Learning, and TF-IDF semantic matching.) T*
+() T*
+(TECHNICAL SKILLS:) T*
+(Python, NLP, Machine Learning, Transformers, SpaCy, NLTK, Scikit-learn, Pandas, NumPy, SQL, PyTorch, GenAI, LangChain) T*
+() T*
+(WORK EXPERIENCE:) T*
+(NLP Specialist - AI Innovation Labs \\(2022 - Present\\)) T*
+(- Engineered advanced NLP text processing algorithms and semantic document similarity models.) T*
+(- Implemented named entity recognition \\(NER\\) and keyword extraction engines using SpaCy and Transformers.) T*
+(- Processed unstructured textual data with Python, Pandas, and NumPy.) T*
+() T*
+(EDUCATION:) T*
+(M.S in Computer Science \\(Artificial Intelligence\\) - IIIT Hyderabad \\(2020 - 2022\\)) T*
+() T*
+(KEY PROJECTS:) T*
+(Document Summarization & QA System: Developed RAG pipeline using LangChain, Python, and Vector DB.) T*
+(Semantic Resume Ranker: Implemented TF-IDF cosine similarity matching algorithms.) T*
+() T*
+(CERTIFICATIONS:) T*
+(Stanford Online NLP & Deep Learning Specialization) T*
+() T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1625
+%%EOF

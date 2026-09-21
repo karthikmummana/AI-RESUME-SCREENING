@@ -1,0 +1,61 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /Resources << /Font << /F1 4 0 R >> >> /MediaBox [0 0 612 792] /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1154 >>
+stream
+BT
+/F1 10 Tf
+14 TL
+50 750 Td
+(Vikram Singh) T*
+(Python Backend Engineer | Email: vikram.singh@email.com | Phone: +91 9123456789) T*
+() T*
+(PROFESSIONAL SUMMARY:) T*
+(Backend Engineer specializing in Python, Django, FastAPI, PostgreSQL, SQL, Redis, and RESTful API development.) T*
+() T*
+(TECHNICAL SKILLS:) T*
+(Python, Django, FastAPI, SQL, PostgreSQL, MongoDB, Redis, Docker, REST APIs, Microservices, Git) T*
+() T*
+(WORK EXPERIENCE:) T*
+(Backend Developer - CloudScale Tech \\(2020 - Present\\)) T*
+(- Architected high throughput REST APIs using Python and FastAPI.) T*
+(- Optimized complex SQL queries and database indexes reducing query latency by 40%.) T*
+(- Integrated MongoDB and Redis caching for distributed applications.) T*
+() T*
+(EDUCATION:) T*
+(M.C.A \\(Master of Computer Applications\\) - Pune University \\(2018 - 2020\\)) T*
+() T*
+(KEY PROJECTS:) T*
+(High Performance Payment Gateway Service: Built async API microservice in FastAPI & PostgreSQL.) T*
+(Distributed Task Queue: Implemented Redis & Celery background jobs in Python.) T*
+() T*
+(CERTIFICATIONS:) T*
+(Python Institute Certified Professional in Python Programming) T*
+() T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000244 00000 n 
+0000000317 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1524
+%%EOF
