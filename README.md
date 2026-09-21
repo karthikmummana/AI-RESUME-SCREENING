@@ -1,113 +1,61 @@
 # 🤖 AI Resume Screening System
 
-An AI-powered web application that automates the initial resume screening process by analyzing candidate resumes against job requirements, extracting relevant information and skills, calculating resume suitability/ATS scores, and ranking candidates based on their job match.
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?logo=vercel)](https://ai-resume-screening-xi.vercel.app/)
+[![Frontend](https://img.shields.io/badge/Frontend-React.js-blue?logo=react)](https://react.dev/)
+[![Backend](https://img.shields.io/badge/Backend-Node.js-green?logo=node.js)](https://nodejs.org/)
+[![Database](https://img.shields.io/badge/Database-MongoDB-green?logo=mongodb)](https://www.mongodb.com/)
+[![Deployment](https://img.shields.io/badge/Deployment-Vercel%20%7C%20Render-black)](https://vercel.com/)
 
-The system is designed to help recruiters reduce manual resume screening effort and quickly identify candidates whose resumes best match the requirements of a particular job.
+An AI-powered web application that automates the initial resume screening process by analyzing candidate resumes against job requirements, extracting relevant information and skills, calculating resume suitability/ATS scores, identifying matching and missing skills, and ranking candidates.
+
+The system is designed to help recruiters reduce the time spent on manual resume screening and provide a structured way to evaluate multiple candidates against a particular job requirement.
 
 ---
 
-## 🚀 Live Application
+## 🌐 Live Demo
 
-### 🌐 Frontend
+### Frontend
 
-The frontend is deployed using Vercel.
+🔗 **Live Application:**  
+https://ai-resume-screening-xi.vercel.app/
 
-**Live URL:**
+### Backend
 
-https://YOUR-VERCEL-DOMAIN.vercel.app
-
-> Replace the above URL with your actual Vercel deployment URL.
-
-### ⚙️ Backend API
-
-The backend is deployed using Render.
-
-**Backend URL:**
-
+🔗 **Backend API:**  
 https://ai-resume-screening-f60a.onrender.com
+
+### GitHub Repository
+
+🔗 **Source Code:**  
+https://github.com/karthikmummana/AI-RESUME-SCREENING
 
 ---
 
 # 📌 Project Overview
 
-Recruiters often receive a large number of resumes for a single job opening. Manually reviewing every resume can be time-consuming and may make it difficult to consistently compare candidates.
+Recruiters may receive a large number of resumes for a single job opening. Manually reviewing every resume can be time-consuming and makes it difficult to compare candidates consistently.
 
-The **AI Resume Screening System** provides an automated screening workflow.
+The **AI Resume Screening System** automates the initial screening stage by processing candidate resumes and comparing them with defined job requirements.
 
-The application allows recruiters to:
-
-- Create a screening session
-- Enter job requirements
-- Upload candidate resumes
-- Parse resume content
-- Extract candidate information
-- Identify candidate skills
-- Compare resumes with job requirements
-- Identify matching skills
-- Identify missing skills
-- Calculate ATS/suitability scores
-- Rank candidates
-- Review candidate information
-- Update candidate screening status
-- Download candidate resumes
-
----
-
-# 🎯 Project Objective
-
-The main objective of this project is to develop a web-based resume screening platform that can automate the initial stage of recruitment.
-
-Instead of manually checking every resume, recruiters can upload multiple resumes and allow the system to analyze them against predefined job requirements.
-
-The system produces structured screening results that help recruiters review candidates more efficiently.
-
----
-
-# 🔄 System Workflow
+The application follows this workflow:
 
 ```text
-                ┌───────────────────────┐
-                │   Create Screening    │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │  Enter Job Requirements│
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │    Upload Resumes     │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │    Resume Parsing     │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │   Skill Extraction    │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │ Resume-Job Matching   │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │ ATS / Suitability     │
-                │       Score           │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │ Candidate Ranking     │
-                └───────────┬───────────┘
-                            │
-                            ▼
-                ┌───────────────────────┐
-                │ Review / Shortlist /  │
-                │        Reject         │
-                └───────────────────────┘
+Job Requirements
+       ↓
+Resume Upload
+       ↓
+Resume Parsing
+       ↓
+Information Extraction
+       ↓
+Skill Extraction
+       ↓
+Resume–Job Matching
+       ↓
+ATS / Suitability Score
+       ↓
+Candidate Ranking
+       ↓
+Candidate Review
+       ↓
+Shortlist / Review / Reject
